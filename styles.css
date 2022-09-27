@@ -1,0 +1,229 @@
+:root {
+  --main-color: #414641;
+  --secondary-color: #4c514c;
+  --alt-color: #7a8a80;
+  --background-color: #f4f6f3;
+}
+/* este es el de LOMBOK */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Utilidades */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Reem Kufi Fun", sans-serif;
+}
+
+h1 {
+  color: var(--main-color);
+  font-size: 78px;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+/* Sección hero (header / nav) */
+
+header {
+  margin: 20px;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  background-image: url("https://admincontent.bimobject.com/public/topbanner/805c168b-ea2e-4e37-8721-0457acf14e2f?ver=1654865658");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+@media (max-width: 480px) {
+  header {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    height: calc(100vh - 20px);
+    background-position: center bottom;
+  }
+}
+
+
+.header-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header p {
+  color: var(--secondary-color);
+  font-size: 24px;
+}
+
+.underline {
+  width: 7%;
+  height: 5px;
+  background-color: var(--alt-color);
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px 0 40px;
+}
+
+.nav-small {
+  font-size: 10px;
+}
+
+.nav-small a {
+  margin-left: 15px;
+}
+
+.btn {
+  border: 2px solid var(--secondary-color);
+  padding: 5px 10px;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+/* Seccion de articulos */
+main {
+  background-color: var(--background-color);
+  padding: 120px 0;
+  height: 650px;
+}
+@media (max-width: 480px){
+ main {
+  padding: 20px, 5px;
+  height: 1200px;
+
+ }
+}
+
+main div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 480px){
+ .cards-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+ }
+}
+  
+ 
+.article-image {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.article-image img {
+  width: 190%;
+}
+
+.article-content {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  gap: 15px;
+  width: 60%;
+  margin: 40px auto 0 auto;
+}
+
+
+/* seccion */
+section {
+  display: flex;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  
+}
+@media (max-width: 480px){
+  section {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 80%;
+     height: 100%;
+     padding-top: 50px;
+     padding-left: 50px;
+  }
+ }
+   
+.tex{
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 480px){
+.tex{
+  width: 100%;
+  padding: 10px;
+}
+}
+
+.img{
+ 
+  background-size: cover;
+  background-position: center bottom;
+}
+
+@media (max-width: 480px){
+section div {
+  justify-content: center;
+  align-items: center;
+}
+}
+
